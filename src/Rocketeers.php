@@ -2,17 +2,21 @@
 
 namespace Rocketeers;
 
+use Zttp\Zttp;
+
 class Rocketeers
 {
     protected $client;
 
-    public function __construct()
+    public function __construct($token)
     {
-        $this->client = '';
+        $this->client = Zttp::withHeaders([
+            'Authorization' => 'Bearer ' . $token,
+        ]);
     }
 
     public function report(array $report)
     {
-        dd($report);
+        dd($this->client);
     }
 }
