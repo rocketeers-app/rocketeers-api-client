@@ -45,7 +45,7 @@
                 "Rocketeers\\API\\RocketeersClientServiceProvider"
             ],
             "aliases": {
-                "API": "Rocketeers\\API\\RocketeersClientFacade"
+                "RocketeersClient": "Rocketeers\\API\\RocketeersClientFacade"
             }
         }
     }
