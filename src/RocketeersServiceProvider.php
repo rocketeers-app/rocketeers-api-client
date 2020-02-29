@@ -19,8 +19,10 @@ class RocketeersServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton('rocketeers', function () {
+        $this->app->singleton('rocketeers.client', function () {
             return new Rocketeers;
         });
+
+        $this->app->alias('rocketeers.client', Rocketeers::class);
     }
 }

@@ -8,6 +8,6 @@ class RocketeersFacade extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return 'rocketeers';
+        return 'rocketeers.client';
     }
 }
