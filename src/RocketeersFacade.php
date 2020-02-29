@@ -1,13 +1,13 @@
 <?php
 
-namespace Rocketeers\API;
+namespace Rocketeers;
 
 use Illuminate\Support\Facades\Facade;
 
-class RocketeersClientFacade extends Facade
+class RocketeersFacade extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return 'rocketeers-client';
+        return 'rocketeers';
     }
 }

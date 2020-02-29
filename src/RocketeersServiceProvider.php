@@ -1,10 +1,10 @@
 <?php
 
-namespace Rockteers\API;
+namespace Rockteers;
 
 use Illuminate\Support\ServiceProvider;
 
-class RocketeersClientServiceProvider extends ServiceProvider
+class RocketeersServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
@@ -18,8 +18,8 @@ class RocketeersClientServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton('rocketeers-client', function () {
-            return new RocketeersClient;
+        $this->app->singleton('rocketeers', function () {
+            return new Rocketeers;
         });
     }
 }
