@@ -1,6 +1,6 @@
 <?php
 
-namespace Rocketeers;
+namespace Rocketeers\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

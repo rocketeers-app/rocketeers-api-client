@@ -42,10 +42,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Rocketeers\\API\\RocketeersClientServiceProvider"
+                "Rocketeers\\RocketeersServiceProvider"
             ],
             "aliases": {
-                "RocketeersClient": "Rocketeers\\API\\RocketeersClientFacade"
+                "Rocketeers": "Rocketeers\\Facades\\RocketeersFacade"
             }
         }
     }
