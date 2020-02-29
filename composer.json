@@ -1,11 +1,11 @@
 {
-    "name": "markvaneijk/rocketeers-api-client",
+    "name": "rocketeers-app/rocketeers-api-client",
     "description": "Rocketeers API Client",
     "keywords": [
         "Mark van Eijk",
         "rocketeers-api-client"
     ],
-    "homepage": "https://github.com/markvaneijk/rocketeers-api-client",
+    "homepage": "https://github.com/rocketeers-app/rocketeers-api-client",
     "license": "MIT",
     "type": "library",
     "authors": [{
