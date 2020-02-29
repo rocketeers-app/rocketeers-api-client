@@ -1,6 +1,6 @@
 <?php
 
-namespace Rockteers;
+namespace Rocketeers;
 
 use Illuminate\Support\ServiceProvider;
 use Rocketeers\Rocketeers;

@@ -23,12 +23,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Rocketeers\\API\\": "src"
+            "Rocketeers\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Rocketeers\\API\\Tests\\": "tests"
+            "Rocketeers\\Tests\\": "tests"
         }
     },
     "scripts": {

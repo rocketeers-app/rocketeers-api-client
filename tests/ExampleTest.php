@@ -1,9 +1,9 @@
 <?php
 
-namespace Rocketeers\API\Tests;
+namespace Rocketeers\Tests;
 
 use Orchestra\Testbench\TestCase;
-use Rockteers\RocketeersServiceProvider;
+use Rocketeers\RocketeersServiceProvider;
 
 class ExampleTest extends TestCase
 {
