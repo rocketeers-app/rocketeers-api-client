@@ -1,6 +1,6 @@
 <?php
 
-namespace Markvaneijk\RocketeersLaravel;
+namespace Rocketeers\API;
 
 use Illuminate\Support\Facades\Facade;
 
