@@ -23,7 +23,6 @@ class Rocketeers
 
     public function report(array $data)
     {
-        dd($data);
         return $this->client->post($this->baseUrl . '/errors', [
             'site_id' => 1,
             'user_id' => 1,
@@ -40,6 +39,7 @@ class Rocketeers
             'trace' => $data['trace'],
 
             'cookies' => $data['cookies'],
+            'files' => $data['files'],
             'headers' => $data['headers'],
             'hostname' => $data['hostname'],
             'inputs' => $data['inputs'],
