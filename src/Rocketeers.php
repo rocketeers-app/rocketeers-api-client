@@ -21,8 +21,9 @@ class Rocketeers
         ]);
     }
 
-    public function data(array $data)
+    public function report(array $data)
     {
+        dd($data);
         return $this->client->post($this->baseUrl . '/errors', [
             'site_id' => 1,
             'user_id' => 1,
@@ -31,11 +32,12 @@ class Rocketeers
             'code' => $data['code'],
             'context' => $data['context'],
             'datetime' => $data['datetime'],
-            'exception' => $data['context']['exception'] ?? null,
+            'exception' => $data['exception'],
             'extra' => $data['extra'],
             'level_name' => $data['level_name'],
             'level' => $data['level'],
             'message' => $data['message'],
+            'trace' => $data['trace'],
 
             'cookies' => $data['cookies'],
             'headers' => $data['headers'],
