@@ -3,7 +3,6 @@
 namespace Rockteers\API;
 
 use Illuminate\Support\ServiceProvider;
-use Rocketeers\API\RocketeersClient;
 
 class RocketeersClientServiceProvider extends ServiceProvider
 {
