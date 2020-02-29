@@ -33,8 +33,10 @@ class Rocketeers
             'datetime' => $data['datetime'],
             'exception' => $data['exception'],
             'extra' => $data['extra'],
+            'file' => $data['file'],
             'level_name' => $data['level_name'],
             'level' => $data['level'],
+            'line' => $data['line'],
             'message' => $data['message'],
             'trace' => $data['trace'],
 
