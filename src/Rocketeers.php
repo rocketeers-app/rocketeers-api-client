@@ -17,17 +17,18 @@ class Rocketeers
             'verify' => false,
             'timeout' => 3,
         ])->withHeaders([
-            'Authorization' => 'Bearer ' . $token,
+            'Authorization' => 'Bearer '.$token,
         ]);
     }
 
     public function report(array $data)
     {
-        return $this->client->post($this->baseUrl . '/errors', [
+        return $this->client->post($this->baseUrl.'/errors', [
             'site_id' => 1,
             'user_id' => 1,
 
             'channel' => $data['channel'],
+            'environment' => $data['environment'],
             'code' => $data['code'],
             'context' => $data['context'],
             'datetime' => $data['datetime'],
