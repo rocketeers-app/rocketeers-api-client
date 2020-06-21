@@ -2,8 +2,8 @@
 
 namespace Rocketeers;
 
-use Zttp\Zttp;
 use Zttp\ConnectionException;
+use Zttp\Zttp;
 
 class Rocketeers
 {
@@ -25,7 +25,7 @@ class Rocketeers
     public function report(array $data)
     {
         try {
-           return $this->client->post($this->baseUrl.'/errors', [
+            return $this->client->post($this->baseUrl.'/errors', [
                 'site_id' => 1,
                 'user_id' => 1,
 
@@ -56,6 +56,8 @@ class Rocketeers
                 'url' => $data['url'],
                 'user_agent' => $data['user_agent'],
             ]);
-        } catch ($e ConnectionException) {}
+        } catch (ConnectionException $e) {
+            dd($e);
+        }
     }
 }
