@@ -42,6 +42,7 @@ class Rocketeers
             'message' => $data['message'],
             'trace' => $data['trace'],
 
+            'command' => $data['command'],
             'cookies' => $data['cookies'],
             'files' => $data['files'],
             'headers' => $data['headers'],
