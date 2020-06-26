@@ -52,7 +52,7 @@ class Rocketeers
             'method' => $data['method'],
             'querystring' => $data['querystring'],
             'referrer' => $data['referrer'],
-            'session' => $data['session'],
+            'sessions' => $data['sessions'],
             'url' => $data['url'],
             'user_agent' => $data['user_agent'],
         ]);
