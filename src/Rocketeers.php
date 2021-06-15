@@ -2,9 +2,6 @@
 
 namespace Rocketeers;
 
-use Zttp\ConnectionException;
-use Zttp\Zttp;
-
 class Rocketeers
 {
     protected $client;
@@ -14,11 +11,12 @@ class Rocketeers
     {
         $this->baseUrl = 'https://rocketeers.app/api/v1';
 
-        $this->client = Zttp::withOptions([
+        $this->client = new \GuzzleHttp\Client([
             'verify' => false,
             'timeout' => 3,
-        ])->withHeaders([
-            'Authorization' => 'Bearer '.$token,
+            'headers' => [
+                'Authorization' => 'Bearer '. $token,
+            ]
         ]);
     }
 

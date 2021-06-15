@@ -8,15 +8,17 @@
     "homepage": "https://github.com/rocketeers-app/rocketeers-api-client",
     "license": "MIT",
     "type": "library",
-    "authors": [{
-        "name": "Mark van Eijk",
-        "email": "mark@vaneijk.co",
-        "role": "Developer"
-    }],
+    "authors": [
+        {
+            "name": "Mark van Eijk",
+            "email": "mark@vaneijk.co",
+            "role": "Developer"
+        }
+    ],
     "require": {
         "php": "^7.0|^8.0",
-        "illuminate/support": "^5.8.0|^6.0.0|^7.0.0|^8.0.0",
-        "kitetail/zttp": "^0.6.0"
+        "guzzlehttp/guzzle": "^7.3",
+        "illuminate/support": "^5.8.0|^6.0.0|^7.0.0|^8.0.0"
     },
     "require-dev": {
         "orchestra/testbench": "^6.0.0",
@@ -35,7 +37,6 @@
     "scripts": {
         "test": "vendor/bin/phpunit",
         "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
-
     },
     "config": {
         "sort-packages": true
