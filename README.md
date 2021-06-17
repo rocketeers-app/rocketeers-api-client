@@ -1,4 +1,4 @@
-# Very short description of the package
+# Rocketeers API Client
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/markvaneijk/rocketeers-api-client.svg?style=flat-square)](https://packagist.org/packages/markvaneijk/rocketeers-api-client)
 [![Build Status](https://img.shields.io/travis/markvaneijk/rocketeers-api-client/master.svg?style=flat-square)](https://travis-ci.org/markvaneijk/rocketeers-api-client)
