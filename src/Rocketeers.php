@@ -2,6 +2,7 @@
 
 namespace Rocketeers;
 
+use Exception;
 use Illuminate\Support\Facades\Http;
 
 class Rocketeers
@@ -22,12 +23,16 @@ class Rocketeers
             $referrer = 'http'.(isset($_SERVER['HTTPS']) ? 's' : '').'://'."{$_SERVER['HTTP_HOST']}/{$_SERVER['REQUEST_URI']}";
         }
 
-        return Http::timeout(3)
-            ->withoutVerifying()
-            ->withHeaders([
-                'Authorization' => 'Bearer ' . $this->token,
-                'Referer' => $referrer ?? null,
-            ])
-            ->post($this->baseUrl . '/errors', $data);
+        try {
+            return Http::timeout(3)
+                ->withoutVerifying()
+                ->withToken($this->token)
+                ->withHeaders([
+                    'Referer' => $referrer ?? null,
+                ])
+                ->post($this->baseUrl . '/errors', $data);
+        } catch (Exception $e) {
+            return false;
+        }
     }
 }
